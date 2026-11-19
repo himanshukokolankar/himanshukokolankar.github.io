@@ -40,7 +40,8 @@ img { max-width: 100%; height: auto; display: block; }
 /* Header */
 .site-header { position: sticky; top: 0; background: rgba(247, 243, 236, 0.95); border-bottom: 1px solid var(--line); z-index: 10; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 60px; }
-.brand { font-family: "Sora", sans-serif; font-weight: 800; font-size: 1.15rem; text-decoration: none; letter-spacing: 0.04em; }
+.brand { font-family: "Sora", sans-serif; font-weight: 800; font-size: 1.3rem; text-decoration: none; letter-spacing: -0.02em; color: var(--black); white-space: nowrap; }
+.brand-surname { color: var(--tan-dark); }
 .brand-dot { color: var(--tan-dark); }
 .nav { display: flex; gap: 22px; align-items: center; }
 .nav a { text-decoration: none; font-weight: 600; font-size: 0.95rem; }
