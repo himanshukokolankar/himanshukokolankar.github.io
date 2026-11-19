@@ -83,6 +83,8 @@ img { max-width: 100%; height: auto; display: block; }
 .project-note { background: var(--warm-white); border-left: 3px solid var(--tan); padding: 10px 14px; font-size: 0.95rem; }
 .project-tools { font-weight: 800; font-size: 0.95rem; }
 .project-visual { background: var(--ink); color: #F7F3EC; border-radius: var(--radius); padding: 28px; min-height: 240px; }
+.project-visual img { width: 100%; height: auto; display: block; border-radius: 12px; }
+.project-visual .visual-caption { margin-top: 16px; text-transform: none; letter-spacing: 0.02em; font-size: 0.9rem; font-weight: 600; }
 .visual-caption { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tan); }
 .visual-line { font-family: "Sora", sans-serif; font-size: 1.25rem; line-height: 1.4; font-weight: 700; }
 .visual-tag { display: inline-block; background: var(--tan); color: var(--ink); font-weight: 800; font-size: 0.9rem; border-radius: 999px; padding: 8px 14px; }

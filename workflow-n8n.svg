@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="488" viewBox="0 0 560 488">
+<rect width="560" height="488" rx="16" fill="#F7F3EC"/>
+<rect x="80" y="24" width="400" height="56" rx="12" fill="#111111"/><text x="280.0" y="48.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Call ends</text><text x="280.0" y="68.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">voice agent collected details</text>
+<line x1="280" y1="80" x2="280" y2="110" stroke="#C98A5E" stroke-width="2.5"/><polygon points="280,110 273,105 273,115" fill="#C98A5E"/>
+<rect x="80" y="110" width="400" height="56" rx="12" fill="#111111"/><text x="280.0" y="134.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Webhook</text><text x="280.0" y="154.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">details sent to n8n</text>
+<line x1="280" y1="166" x2="280" y2="196" stroke="#C98A5E" stroke-width="2.5"/><polygon points="280,196 273,191 273,201" fill="#C98A5E"/>
+<rect x="80" y="196" width="400" height="56" rx="12" fill="#D9A07A"/><text x="280.0" y="220.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">n8n AI agent</text><text x="280.0" y="240.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111111" opacity="0.85">analyses & routes the lead</text>
+<rect x="35" y="282" width="150" height="64" rx="12" fill="#FFFFFF"/><text x="110.0" y="310.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Qualified</text><text x="110.0" y="330.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111111" opacity="0.85">→ Google Sheet</text>
+<rect x="35" y="282" width="150" height="64" rx="12" fill="none" stroke="#D9A07A" stroke-width="2"/>
+<rect x="205" y="282" width="150" height="64" rx="12" fill="#FFFFFF"/><text x="280.0" y="310.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Delaying</text><text x="280.0" y="330.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111111" opacity="0.85">→ Follow-up Sheet</text>
+<rect x="205" y="282" width="150" height="64" rx="12" fill="none" stroke="#D9A07A" stroke-width="2"/>
+<rect x="375" y="282" width="150" height="64" rx="12" fill="#FFFFFF"/><text x="450.0" y="310.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Not interested</text><text x="450.0" y="330.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111111" opacity="0.85">→ Dropped</text>
+<rect x="375" y="282" width="150" height="64" rx="12" fill="none" stroke="#D9A07A" stroke-width="2"/>
+</svg>

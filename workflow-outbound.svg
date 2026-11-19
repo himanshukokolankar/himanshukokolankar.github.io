@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="464" viewBox="0 0 560 464">
+<rect width="560" height="464" rx="16" fill="#F7F3EC"/>
+<rect x="80" y="24" width="400" height="56" rx="12" fill="#111111"/><text x="280.0" y="48.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Enquiry list</text><text x="280.0" y="68.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">from Google Sheets</text>
+<line x1="280" y1="80" x2="280" y2="110" stroke="#C98A5E" stroke-width="2.5"/><polygon points="280,110 273,105 273,115" fill="#C98A5E"/>
+<rect x="80" y="110" width="400" height="56" rx="12" fill="#111111"/><text x="280.0" y="134.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Outbound call</text><text x="280.0" y="154.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">voice agent calls them</text>
+<line x1="280" y1="166" x2="280" y2="196" stroke="#C98A5E" stroke-width="2.5"/><polygon points="280,196 273,191 273,201" fill="#C98A5E"/>
+<rect x="80" y="196" width="400" height="56" rx="12" fill="#111111"/><text x="280.0" y="220.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Interest checked</text><text x="280.0" y="240.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">talks & listens</text>
+<line x1="280" y1="252" x2="280" y2="282" stroke="#C98A5E" stroke-width="2.5"/><polygon points="280,282 273,277 273,287" fill="#C98A5E"/>
+<rect x="80" y="282" width="400" height="56" rx="12" fill="#D9A07A"/><text x="280.0" y="306.0" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="15" font-weight="700" fill="#111111">Outcome saved</text><text x="280.0" y="326.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#111111" opacity="0.85">logged in Google Sheets</text>
+</svg>
