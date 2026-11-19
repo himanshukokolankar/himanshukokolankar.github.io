@@ -1,5 +1,17 @@
-// Himanshu Kolankar — Portfolio: menu, copy-email, year. No tracking, no libraries.
+// Himanshu Kolankar — Portfolio: menu, copy-email, year, scroll reveal. No tracking, no libraries.
 (function () {
+  document.documentElement.classList.add('js');
+
+  // Scroll reveal: fade cards and sections up as they enter view.
+  var revealEls = document.querySelectorAll('.project, .service-list li, .faq details, .about-grid, .skills-grid > div, .demo');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
+  }
   var menuBtn = document.getElementById('menuBtn');
   var nav = document.getElementById('nav');
   if (menuBtn && nav) {

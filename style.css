@@ -77,11 +77,25 @@ img { max-width: 100%; height: auto; display: block; }
 .project { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; padding: 36px 0; border-top: 1px solid var(--line); }
 .project:first-of-type { margin-top: 20px; }
 /* Featured build: full-width hero card, diagram on top */
-.project-2 { grid-template-columns: 1fr; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+.project-2 { grid-template-columns: 1fr; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
 .project-2 .project-visual { padding: 20px; }
 /* Other projects: 2-column card grid */
 .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
-.work-grid .project { display: flex; flex-direction: column; gap: 0; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; margin: 0; }
+.work-grid .project { display: flex; flex-direction: column; gap: 0; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; margin: 0; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.work-grid .project:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.10); }
+section { scroll-margin-top: 72px; }
+
+/* Animation: hero entrance + scroll reveal (JS adds .js and .reveal) */
+@keyframes heroIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.hero h1 { animation: heroIn 0.7s ease both; }
+.hero .lede { animation: heroIn 0.7s ease 0.12s both; }
+.hero .hero-actions, .hero .availability, .hero .tools-strip { animation: heroIn 0.7s ease 0.24s both; }
+html.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+html.js .reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .hero h1, .hero .lede, .hero .hero-actions, .hero .availability, .hero .tools-strip { animation: none; }
+  html.js .reveal { opacity: 1; transform: none; transition: none; }
+}
 .work-grid .project-visual { padding: 16px; min-height: 0; margin-bottom: 18px; }
 .work-grid .project-visual img { border-radius: 8px; }
 .project-label { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tan-dark); }
