@@ -319,6 +319,29 @@
         <a class="btn btn-tan" href="mailto:official.himanshukolankar30@gmail.com">Get in touch</a>
         <button class="btn btn-outline-light" id="copyEmail" type="button">Copy email</button>
       </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label>Your name
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label>Your email
+            <input type="email" name="email" placeholder="you@business.com" required>
+          </label>
+        </div>
+        <label>What kind of business?
+          <select name="business_type">
+            <option>Real estate</option>
+            <option>Clinic</option>
+            <option>Small business</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Your message
+          <textarea name="message" rows="4" placeholder="Tell me about your business and your calls..." required></textarea>
+        </label>
+        <button class="btn btn-tan" type="submit">Send message</button>
+        <p class="form-status" id="formStatus" role="status" hidden></p>
+      </form>
       <p class="contact-email">official.himanshukolankar30@gmail.com</p>
       <p class="contact-note">GitHub: <a href="https://github.com/himanshukokolankar">github.com/himanshukokolankar</a> &middot; LinkedIn and Fiverr profiles are being set up — email is the best way to reach me for now.</p>
     </div>

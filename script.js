@@ -48,6 +48,39 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
+  // Contact form: free FormSubmit endpoint, messages go to Himanshu's email.
+  // First submission triggers a one-time confirmation email to him; after he
+  // confirms once, every message lands in his inbox.
+  var form = document.getElementById('contactForm');
+  var formStatus = document.getElementById('formStatus');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      var btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      if (formStatus) { formStatus.hidden = false; formStatus.className = 'form-status'; formStatus.textContent = ''; }
+      var data = new FormData(form);
+      data.append('_subject', 'New portfolio enquiry');
+      data.append('_template', 'table');
+      fetch('https://formsubmit.co/ajax/official.himanshukolankar30@gmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data
+      }).then(function (res) {
+        if (!res.ok) throw new Error('send failed');
+        form.reset();
+        if (formStatus) { formStatus.className = 'form-status ok'; formStatus.textContent = 'Message sent — thank you! I will reply soon.'; }
+      }).catch(function () {
+        if (formStatus) { formStatus.className = 'form-status err'; formStatus.textContent = 'Could not send right now — please email me directly at official.himanshukolankar30@gmail.com.'; }
+      }).finally(function () {
+        btn.disabled = false;
+        btn.textContent = 'Send message';
+      });
+    });
+  }
+
   // Featured build demo: step through the n8n workflow.
   var demoSteps = document.querySelectorAll('.demo-step');
   var demoLine = document.getElementById('demoLine');
