@@ -48,17 +48,19 @@
     <div class="wrap">
       <p class="eyebrow">Selected work</p>
       <h2 class="section-title">Turning ideas into real outcomes</h2>
-      <p class="section-intro">My strongest build is first. These are personal prototypes I built and tested myself, plus two concept designs showing what I can build next — not paid client deliveries. Every one is labelled honestly, so you know exactly what was built and what is a concept.</p>
+      <p class="section-intro">Three builds I made and tested myself, first. Then two concept designs showing what I can build next — every one labelled honestly, so you know exactly what was built and what is a concept.</p>
 
       <article class="project project-2">
         <div class="project-visual">
           <img src="workflow-n8n.svg" alt="AI Voice Automation workflow: call ends, webhook to n8n, AI agent routes qualified leads to Google Sheets" loading="lazy">
-          <p class="visual-caption">Workflow diagram — shows how the automation flows.</p>
+          <p class="visual-caption">Call ends &rarr; Webhook &rarr; n8n AI agent &rarr; Qualified leads in Google Sheets</p>
         </div>
         <div class="project-text">
-          <p class="project-label">Featured build &middot; Personal Prototype &middot; Tested end to end</p>
-          <h3>AI Voice Automation with n8n</h3>
-          <p class="project-cat">Business Automation &middot; API Integration</p>
+          <p class="project-label">Featured build &middot; Personal Prototype</p>
+          <p class="badge-row"><span class="badge badge-tested">Tested &mdash; real test calls</span></p>
+          <h3>Every call answered, every lead sorted</h3>
+          <p class="project-cat">AI Voice Automation with n8n &middot; Business Automation</p>
+          <dl class="pbs"><div><dt>Problem</dt><dd>Missed calls and slow follow-ups lose leads.</dd></div><div><dt>Built</dt><dd>A voice agent + n8n flow that sorts every call the moment it ends.</dd></div><div><dt>Status</dt><dd>Tested end to end with real test calls.</dd></div></dl>
           <p>My strongest build. When a call ends, the voice agent sends the details by webhook to n8n. An AI agent there analyses the data and routes it — qualified leads to one Sheet, people who are delaying to a follow-up Sheet, and not-interested contacts dropped.</p>
           <ul class="project-points">
             <li>Built the full automation myself, practised on it a lot</li>
@@ -67,14 +69,28 @@
           </ul>
           <p class="project-note">Honest status: the n8n workflow was on a free plan that expired, so the saved workflow was lost. I can rebuild it — the flow and the testing are mine.</p>
           <p class="project-tools">VAPI &middot; n8n &middot; Google Sheets &middot; Webhooks</p>
+          <p class="project-cta">Want this for your business? <a href="mailto:official.himanshukolankar30@gmail.com">Email me</a></p>
+        </div>
+        <div class="demo" id="demo">
+          <p class="demo-title">See it run &mdash; tap a step</p>
+          <div class="demo-steps">
+            <button type="button" class="demo-step active" data-step="0">1 &middot; Call ends</button>
+            <button type="button" class="demo-step" data-step="1">2 &middot; Webhook</button>
+            <button type="button" class="demo-step" data-step="2">3 &middot; n8n AI agent</button>
+            <button type="button" class="demo-step" data-step="3">4 &middot; Sorted in Sheets</button>
+          </div>
+          <p class="demo-line" id="demoLine">The call ends. The voice agent has the caller&rsquo;s details &mdash; name, interest, timing.</p>
+          <p class="demo-sheet" id="demoSheet" hidden>Sample lead in the Sheet: <strong>Rahul Sharma &middot; Interested &middot; 2BHK &middot; Visit Saturday 11 AM</strong></p>
         </div>
       </article>
 
       <article class="project project-1">
         <div class="project-text">
-          <p class="project-label">Personal Prototype &middot; Concept Demo</p>
-          <h3>BK Properties AI Receptionist</h3>
-          <p class="project-cat">AI Voice Agent &middot; Real Estate</p>
+          <p class="project-label">Personal Prototype &middot; Example scenario</p>
+          <p class="badge-row"><span class="badge badge-tested">Tested &mdash; demo calls</span></p>
+          <h3>No missed calls, no missed bookings</h3>
+          <p class="project-cat">BK Properties AI Receptionist &middot; Real Estate</p>
+          <dl class="pbs"><div><dt>Problem</dt><dd>Property enquiries come in by phone, and the good buyers get lost in the rush.</dd></div><div><dt>Built</dt><dd>A voice receptionist that talks to callers, finds the interested ones, and books their visit.</dd></div><div><dt>Status</dt><dd>Demo built and tested &mdash; BK Properties is an example scenario, not a real client.</dd></div></dl>
           <p>A receptionist demonstration for a real-estate business. It handles incoming enquiries by voice, finds the callers who are genuinely interested, and schedules their visit.</p>
           <ul class="project-points">
             <li>Inbound calls handled by the voice agent</li>
@@ -83,18 +99,21 @@
           </ul>
           <p class="project-note">Note: BK Properties is an example scenario used for this demo, not a real client.</p>
           <p class="project-tools">VAPI &middot; ElevenLabs</p>
+          <p class="project-cta">Want a receptionist like this for your business? <a href="mailto:official.himanshukolankar30@gmail.com">Email me</a></p>
         </div>
         <div class="project-visual">
           <img src="workflow-receptionist.svg" alt="AI Receptionist workflow: incoming call, voice agent, qualify caller, visit booked" loading="lazy">
-          <p class="visual-caption">Workflow diagram — shows how the agent works.</p>
+          <p class="visual-caption">Incoming call &rarr; Voice agent &rarr; Qualified &rarr; Visit booked</p>
         </div>
       </article>
 
       <article class="project project-3">
         <div class="project-text">
           <p class="project-label">Personal Prototype &middot; Demo</p>
-          <h3>Real Estate Outbound Calling Agent</h3>
-          <p class="project-cat">Voice AI &middot; Business Automation</p>
+          <p class="badge-row"><span class="badge badge-tested">Tested &mdash; demo calls</span></p>
+          <h3>Leads called back before they go cold</h3>
+          <p class="project-cat">Real Estate Outbound Calling Agent &middot; Voice AI</p>
+          <dl class="pbs"><div><dt>Problem</dt><dd>Enquiries go cold when nobody calls back quickly.</dd></div><div><dt>Built</dt><dd>An outbound voice agent that calls enquiries, checks interest, and logs the outcome.</dd></div><div><dt>Status</dt><dd>Demo only &mdash; calls made from the web, no bulk automated calling claimed.</dd></div></dl>
           <p>An outbound voice-agent demo for real-estate lead engagement. I made the calls from the web, and the call outcomes were saved in Google Sheets.</p>
           <ul class="project-points">
             <li>Outbound conversation design for enquiries</li>
@@ -103,22 +122,27 @@
           </ul>
           <p class="project-note">Demo only — no bulk automated calling is claimed.</p>
           <p class="project-tools">VAPI &middot; AI Voice Technology</p>
+          <p class="project-cta">Want your enquiries called back fast? <a href="mailto:official.himanshukolankar30@gmail.com">Email me</a></p>
         </div>
         <div class="project-visual">
           <img src="workflow-outbound.svg" alt="Outbound Calling Agent workflow: enquiry list, outbound call, interest checked, outcome saved" loading="lazy">
-          <p class="visual-caption">Workflow diagram — shows how the follow-up flows.</p>
+          <p class="visual-caption">Enquiry list &rarr; Outbound call &rarr; Interest checked &rarr; Saved in Sheets</p>
         </div>
       </article>
+
+      <h3 class="concepts-heading">Concept designs &mdash; what I can build next</h3>
 
       <article class="project project-4">
         <div class="project-visual">
           <img src="workflow-clinic.svg" alt="Clinic AI Receptionist concept: patient calls, voice agent, appointment booked, booking saved" loading="lazy">
-          <p class="visual-caption">Concept diagram — shows how it would work.</p>
+          <p class="visual-caption">Patient calls &rarr; Voice agent &rarr; Appointment booked &rarr; Saved</p>
         </div>
         <div class="project-text">
           <p class="project-label">Concept &middot; Not built yet &middot; No client</p>
-          <h3>Clinic AI Receptionist</h3>
-          <p class="project-cat">AI Voice Agent &middot; Healthcare</p>
+          <p class="badge-row"><span class="badge badge-concept">Concept &mdash; not built yet</span></p>
+          <h3>Patients booked, even when the clinic is busy</h3>
+          <p class="project-cat">Clinic AI Receptionist &middot; Healthcare</p>
+          <dl class="pbs"><div><dt>Problem</dt><dd>Clinics miss patient calls when the reception is busy.</dd></div><div><dt>Built</dt><dd>A voice agent that answers, books appointments, and saves them where the clinic can see them.</dd></div><div><dt>Status</dt><dd>Concept &mdash; not built yet, no clinic client.</dd></div></dl>
           <p>A concept design for a clinic: the voice agent answers patient calls, books appointments, and saves the booking where the clinic can see it. It uses the same flow I have already built and tested — voice agent, webhook, n8n routing, Google Sheets.</p>
           <ul class="project-points">
             <li>Appointment booking by voice</li>
@@ -127,14 +151,17 @@
           </ul>
           <p class="project-note">Concept only — this is what I can build for a clinic. No clinic client yet, and nothing here is a real booking.</p>
           <p class="project-tools">VAPI &middot; ElevenLabs &middot; n8n &middot; Google Sheets</p>
+          <p class="project-cta">Want a receptionist like this for your clinic? <a href="mailto:official.himanshukolankar30@gmail.com">Email me</a></p>
         </div>
       </article>
 
       <article class="project project-5">
         <div class="project-text">
           <p class="project-label">Concept &middot; Not built yet &middot; No client</p>
-          <h3>Small Business Lead Follow-up Automation</h3>
-          <p class="project-cat">Business Automation &middot; Lead Management</p>
+          <p class="badge-row"><span class="badge badge-concept">Concept &mdash; not built yet</span></p>
+          <h3>No enquiry left without an answer</h3>
+          <p class="project-cat">Small Business Lead Follow-up Automation &middot; Lead Management</p>
+          <dl class="pbs"><div><dt>Problem</dt><dd>Small businesses lose enquiries they never follow up.</dd></div><div><dt>Built</dt><dd>Every missed call or enquiry captured, followed up by voice, and logged &mdash; so no lead is lost.</dd></div><div><dt>Status</dt><dd>Concept &mdash; not built yet, no client.</dd></div></dl>
           <p>A concept design for a small business that misses enquiries: every missed call or enquiry is captured, followed up by voice, and logged — so no lead is lost. Built on the same n8n and Sheets flow I have already tested end to end.</p>
           <ul class="project-points">
             <li>Missed enquiries captured automatically</li>
@@ -143,10 +170,11 @@
           </ul>
           <p class="project-note">Concept only — this is what I can build for a small business. No client yet, and no results are claimed.</p>
           <p class="project-tools">n8n &middot; Webhooks &middot; Google Sheets &middot; VAPI</p>
+          <p class="project-cta">Want every enquiry followed up? <a href="mailto:official.himanshukolankar30@gmail.com">Email me</a></p>
         </div>
         <div class="project-visual">
           <img src="workflow-followup.svg" alt="Lead Follow-up Automation concept: missed enquiry, follow-up call, interest checked, outcome logged" loading="lazy">
-          <p class="visual-caption">Concept diagram — shows how it would work.</p>
+          <p class="visual-caption">Missed enquiry &rarr; Follow-up call &rarr; Interest checked &rarr; Logged</p>
         </div>
       </article>
     </div>

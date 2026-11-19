@@ -82,7 +82,25 @@ img { max-width: 100%; height: auto; display: block; }
 .project-points li { margin-bottom: 6px; }
 .project-note { background: var(--warm-white); border-left: 3px solid var(--tan); padding: 10px 14px; font-size: 0.95rem; }
 .project-tools { font-weight: 800; font-size: 0.95rem; }
-.project-visual { background: var(--ink); color: #F7F3EC; border-radius: var(--radius); padding: 28px; min-height: 240px; }
+.project-visual { background: var(--ink); color: #F7F3EC; border-radius: var(--radius); padding: 28px; min-height: 240px; order: -1; }
+.badge-row { margin: 0 0 12px; }
+.badge { display: inline-block; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 999px; padding: 6px 12px; }
+.badge-tested { background: #2E7D32; color: #fff; }
+.badge-concept { background: var(--tan); color: var(--ink); }
+.pbs { margin: 0 0 14px; }
+.pbs div { display: flex; gap: 10px; margin-bottom: 6px; }
+.pbs dt { font-weight: 800; color: var(--tan-dark); min-width: 64px; }
+.pbs dd { margin: 0; }
+.project-cta { font-weight: 800; }
+.project-cta a { color: var(--tan-dark); }
+.concepts-heading { font-size: 1.4rem; margin: 48px 0 0; padding-top: 36px; border-top: 1px solid var(--line); }
+.demo { grid-column: 1 / -1; background: var(--warm-white); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+.demo-title { font-family: "Sora", sans-serif; font-weight: 800; margin-bottom: 12px; }
+.demo-steps { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.demo-step { font: inherit; font-weight: 700; font-size: 0.9rem; background: var(--white); border: 1.5px solid var(--ink); border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+.demo-step.active { background: var(--ink); color: #fff; }
+.demo-line { margin: 0; }
+.demo-sheet { margin: 12px 0 0; background: var(--white); border-left: 3px solid #2E7D32; padding: 10px 14px; }
 .project-visual img { width: 100%; height: auto; display: block; border-radius: 12px; }
 .project-visual .visual-caption { margin-top: 16px; text-transform: none; letter-spacing: 0.02em; font-size: 0.9rem; font-weight: 600; }
 .visual-caption { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tan); }

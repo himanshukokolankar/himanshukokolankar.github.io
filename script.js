@@ -35,4 +35,26 @@
 
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+
+  // Featured build demo: step through the n8n workflow.
+  var demoSteps = document.querySelectorAll('.demo-step');
+  var demoLine = document.getElementById('demoLine');
+  var demoSheet = document.getElementById('demoSheet');
+  var stepText = [
+    'The call ends. The voice agent has the caller\u2019s details \u2014 name, interest, timing.',
+    'A webhook sends those details straight to n8n \u2014 no manual copying.',
+    'The n8n AI agent reads the details and decides: qualified, delaying, or not interested.',
+    'Qualified leads land in Google Sheets automatically. Delaying leads go to a follow-up Sheet; not-interested contacts are dropped.'
+  ];
+  if (demoSteps.length && demoLine) {
+    demoSteps.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var i = parseInt(btn.getAttribute('data-step'), 10);
+        demoSteps.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        demoLine.textContent = stepText[i];
+        if (demoSheet) demoSheet.hidden = (i !== 3);
+      });
+    });
+  }
 })();
